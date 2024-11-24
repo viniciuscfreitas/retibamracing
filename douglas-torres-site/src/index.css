@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonte estilizada para corridas */
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Gradientes personalizados para transições */
+.bg-wave-separator-top {
+    background: url('/assets/wave-separator-top.svg') no-repeat center center;
+    background-size: cover;
+}
+
+.bg-wave-separator-bottom {
+    background: url('/assets/wave-separator-bottom.svg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Animações */
+.animate-fade-in-down {
+    animation: fadeInDown 1s ease-out;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
